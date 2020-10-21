@@ -13,7 +13,11 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: NavigationBar(screenSize),
-      body: Container(),
+      body: Container(
+        child: Center(
+          child: Text("Screen is ${screenSize.width} x ${screenSize.height}"),
+        ),
+      ),
     );
   }
 }
